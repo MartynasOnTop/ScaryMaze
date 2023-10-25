@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 4211023654738987875, guid: 44b8aa60796512e48bb9ae52c8a80760, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7589498877401604488, guid: 44b8aa60796512e48bb9ae52c8a80760, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.17675209
@@ -226,11 +230,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7363443718489890527, guid: 44b8aa60796512e48bb9ae52c8a80760, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44b8aa60796512e48bb9ae52c8a80760, type: 3}
+--- !u!1 &105425449 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4211023654738987875, guid: 44b8aa60796512e48bb9ae52c8a80760, type: 3}
+  m_PrefabInstance: {fileID: 105425448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1096262589
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +340,7 @@ GameObject:
   - component: {fileID: 1514395025}
   - component: {fileID: 1514395024}
   - component: {fileID: 1514395026}
+  - component: {fileID: 1514395027}
   m_Layer: 0
   m_Name: ScaryFace
   m_TagString: Untagged
@@ -504,6 +511,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1514395027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514395023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b62cdda73709ae4585653bbe3d34d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnCooldown: 3
+  button: {fileID: 105425449}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
